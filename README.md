@@ -1,2 +1,65 @@
 # Algorithmic-Discrimination-Proof-Ladder
 A simulation system based on counterfactual causal inference to verify the burden of proof allocation in algorithmic discrimination litigation.
+# Algorithmic-Discrimination-Proof-Ladder
+# 算法歧视诉讼举证责任分配模拟系统
+
+This repository contains the simulation system for the undergraduate thesis: **"The Dilemma and Resolution of Burden of Proof Allocation in Algorithmic Discrimination Litigation: A Perspective Based on Counterfactual Causal Inference."**
+
+本项目是毕业论文《算法歧视诉讼中举证责任分配的困境与出路——基于“反事实因果推断”视角》的配套模拟实验工具。
+
+---
+
+## 📖 Project Overview | 项目概览
+
+Algorithmic discrimination presents a "Black Box" challenge in judicial proceedings, making it nearly impossible for plaintiffs to meet the traditional burden of proof. This project implements a **"Three-Tiered Burden of Proof Rule"** to bridge the gap between legal requirements and technical feasibility through counterfactual analysis.
+
+算法歧视在司法程序中面临“黑箱”挑战，导致原告难以履行证明义务。本项目通过反事实分析，构建了一套衔接法律需求与技术可行性的**“三阶梯举证责任规则”**。
+
+---
+
+## ⚖️ The Three-Tiered Rule | 三阶梯证明规则模拟
+
+The simulation strictly follows the procedural logic proposed in the research:
+本模拟系统严格遵循论文提出的程序逻辑：
+
+1. **Phase 1: Plaintiff's Prima Facie Case (第一阶梯：原告初步举证)**
+   - **Legal Logic**: The plaintiff identifies statistical deviation to shake the presumption of algorithmic neutrality.
+   - **Simulation**: Calculates **Disparate Impact (DI)**. If the hiring/pricing ratio falls below the 80% threshold, the burden of proof shifts.
+   - **法律逻辑**：原告识别统计偏差，动摇算法中性推定。模拟计算“差别性影响”比值，若低于 80% 阈值则触发责任转移。
+
+2. **Phase 2: Defendant's Technical Counter-proof (第二阶梯：被告技术反证)**
+   - **Legal Logic**: The burden shifts to the platform to produce a "Technical Verification Report" using causal inference.
+   - **Simulation**: Conducts **Counterfactual Intervention**. It answers: "Would the decision change if the applicant's protected attribute (e.g., gender) were different, while holding all other features constant?"
+   - **法律逻辑**：责任转移至平台，平台需利用因果推断出具《技术验证报告》。模拟“反事实干预”，回答：“在保持其他特征不变的情况下，若改变性别等敏感属性，决策结果是否会改变？”
+
+3. **Phase 3: Substantive Judicial Review (第三阶梯：法院实质审查)**
+   - **Legal Logic**: The judge reviews the causal effect and statistical significance to reach a verdict.
+   - **Simulation**: Combines individual counterfactual results with **Group Discrimination Rates** to ensure judicial robustness.
+   - **法律逻辑**：法官审查因果效应与统计显著性。结合个案反事实检验与群体歧视率，确保司法裁决的稳健性。
+
+---
+
+## 🛠️ Technical Features | 技术特性
+
+- **Cross-Scenario Validation (多场景验证)**: Supports both Hiring Discrimination (Classification) and "Big Data Price Skimming" (Regression).
+- **Causal Robustness (因果稳健性)**: Implements batch counterfactual testing to provide statistical confidence levels for legal evidence.
+- **Model-Agnostic (模型无关性)**: The proof logic can be applied to various "Black Box" algorithms.
+
+---
+
+## 🚀 Getting Started | 快速开始
+
+### Prerequisites | 环境要求
+- Python 3.8+
+- Scikit-learn, Pandas, NumPy
+
+### Installation & Execution | 安装与运行
+```bash
+# Clone the repository | 克隆仓库
+git clone [https://github.com/](https://github.com/)[Your-Username]/Algorithmic-Discrimination-Proof-Ladder.git
+
+# Install dependencies | 安装依赖
+pip install -r requirements.txt
+
+# Run the simulation | 运行模拟
+python src/main_simulation.py

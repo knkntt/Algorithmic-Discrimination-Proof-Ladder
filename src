@@ -1,1 +1,14 @@
+# 创建src目录（如果还没创建）
+mkdir -p src tests
 
+# 创建包标识文件
+touch src/__init__.py tests/__init__.py
+
+# 将主要的Python文件移动到src目录
+mv adpscore.py src/
+mv algo_simulation.py src/
+mv batch_tests.py src/
+mv dataset.py src/
+
+# 如果docs/是文档，也移动到合适位置
+# mv docs/ docs/  # 这个不动，保持原位置

@@ -13,7 +13,7 @@ This repository contains the simulation system for the undergraduate thesis: **"
 
 Algorithmic discrimination presents a "Black Box" challenge in judicial proceedings, making it nearly impossible for plaintiffs to meet the traditional burden of proof. This project implements a **"Three-Tiered Burden of Proof Rule"** to bridge the gap between legal requirements and technical feasibility through counterfactual analysis.
 
-算法歧视在司法程序中面临“黑箱”挑战，导致原告难以履行证明义务。本项目通过反事实分析，构建了一套衔接法律需求与技术可行性的**“三阶梯举证责任规则”**。
+算法歧视在司法程序中面临“黑箱”挑战，导致原告难以履行证明义务。本项目通过反事实分析，构建了一套衔接法律需求与技术可行性的“三阶梯举证责任规则”。
 
 ---
 

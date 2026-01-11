@@ -8,6 +8,7 @@ This repository contains the simulation system for the undergraduate thesis: **"
 本项目是毕业论文《算法歧视诉讼中举证责任分配的困境与出路——基于“反事实因果推断”视角》的配套模拟实验工具。
 
 ---
+> **This project formalizes legal burden-shifting rules into a rigorous causal inference model.** > **本项目将法律上的举证责任分配规则形式化为严谨的因果推断模型。**
 
 ## 📖 Project Overview | 项目概览
 
